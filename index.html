@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Matthew Ruigrok Portfolio</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+        
+        <!-- Font style-->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style.css">
+    
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/4" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">Experience</a></li>
+                </ul>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi I am <strong> Matthew Ruigrok </strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Mechatronics Engineering Student</p>
+            <img src="img/laptop-02.jpg" alt="Picture of me smiling" class="intro__img">
+        </section>
+
+        <!-- Projects -->
+        <section class="my-projects" id="projects">
+            <h2 class="section__title section__title--projects"> Projects </h2>
+
+            <div class="projects">
+                <div class="project">
+                    <h3>Smart Response</h3>
+                    <p> Smart Response is an app made to minimize the overhead time notifying first responders when there has been 
+                        a potentially life-threatening incident. The app connects to the cityIQ nodes located in Hamilton, Ontario and receives
+                        real-time audio and video data to determine if an incident has occured. If it has, the app then geotags the location of the incident with a live image 
+                        so first responders can determine what actions to take next.</p>
+                </div> <!-- project -->
+
+                <div class="project">
+                    <h3>Parnas Pacemaker</h3>
+                    <p> Parnas Pacemaker is a mock pacemaker that is capable of inhibiting and delivering rate adpative pulses to the atrium and ventricle
+                        in up to 10 different modes. The microcontroller was programmed using Matlab and Simulink to deliver pulses according to a specific mode provided by the user. 
+                        A GUI was built using Node.js to allow the user to input and store personalized settings and interface with the microcontroller.
+                    </p>
+                </div> <!-- project -->
+
+                <div class="project">
+                    <h3>Graph DB</h3>
+                    <p> Graph DB is an investigation into graph databases that was carried out along with another colleage. The resulting project enables the user to create graphs, which include unique nodes and relationships
+                        as well as save and reproduce their previously created graphs. Along the way, some basic graph searching algorithms
+                        such as DFS and BFS were investigated and implemented.
+                    </p>
+                </div> <!-- project -->
+            </div> <!-- all projects -->
+
+            <a href="#work" class="btn"> More Projects </a>
+
+        </section>
+        
+        <!-- About Me-->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about"> About Me </h2>
+            <p class="section__subtitle section__subtitle--about"></p>
+            <div class="about-me__body">
+                <p> I am a third year student at <strong>McMaster University</strong> currently pursuing a Bachelor of Engineering in Mechatronics.
+                    Outside of school I enjoy playing a variety of sports (hockey and soccer are my favourites) as well as working with my hands.
+                    I am a hobbyist metal fabricator and wood worker and have created a variety of rustic furniture pieces.
+                    My expected graduation date is <strong>December 2021</strong> and I will be seeking full-time employment post-graduation.
+                </p>
+
+                <!-- Education
+                <h3> <strong> Education </strong> </h3>
+                    <p> I am a third year student at McMaster University currently pursuing a Bachelor of Engineering in Mechatronics.
+                        My expected graduation date is December 2021 and I will be seeking full-time employment post-graduation. 
+                    </p>
+                -->
+
+                <!-- Experience
+                <h3> <strong> Experience </strong> </h3>
+                    <p> </p>
+                -->
+
+                <!-- Skills 
+                <h3><strong> Skills </strong> </h3>
+                    <p> <strong>Programming: </strong> C, Python, Matlab, Java, JavaScript, HTML5, CSS </p>
+                    <p> <strong>Tools and Libraries: </strong> Git, IntelliJ, Eclipse, numpy, pandas, matplotlib, librosa, tensorflow</p>
+                    <p> <strong>Other: </strong> Simulink, Inventor, OpenSCAD, Cura, GT Suite, LabVIEW, Model.CONNECT, Microsoft Office </p>
+                -->
+
+                <!-- Hobbies
+                <h3> Hobbies </h3>
+                    <p>
+                        Outside of school and work I enjoy playing a variety of sports (hockey and soccer are my favourites) as well as working with my hands.
+                        I am a hobbyist metal fabricator and wood worker and have created a variety of rustic furniture pieces.
+                    </p>
+                --> 
+
+                <div class="resume">
+                    <a href="mnr_resume.pdf" target="_blank"><p> Get CV </p></a>
+                </div>
+
+            </div>
+
+            <img src="img/road-01.jpg" alt="image of me doing this" class="about-me__img">
+        
+        </section>
+
+        <!-- My Work-->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work"> My Work </h2>
+            <p class="section__subtitle section__subtitle--work"></p>
+        
+            <div class="portfolio">
+                <!--Item 01 -->
+                <a href="https://github.com/mruigrok/smartResponse" class="portfolio__item">
+                    <div class="portfolio__img-text">
+                        <img src="img/city-01.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__text"> Smart Response </div>
+                    </div>
+                </a>
+
+                <!--Item 02 -->
+                <a href="https://github.com/mruigrok/ParnasPacemaker" class="portfolio__item">
+                    <div class="portfolio__img-text">
+                        <img src="img/monitor-04.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__text"> Parnas Pacemaker </div>
+                    </div>
+                </a>
+
+                <!--Item 03-->
+                <a href="https://github.com/redha1419/graphDB" class="portfolio__item">
+                    <div class="portfolio__img-text">
+                        <img src="img/laptop-01.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__text"> GraphDB </div>
+                    </div>
+                </a>
+            
+                <a href="https://github.com/mruigrok/self-driving-car" class="portfolio__item">
+                    <div class="portfolio__img-text">
+                        <img src="img/laptop-03.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__text"> Autonomous car simulation </div>
+                    </div>
+                </a>
+
+                <!--Item 06 -->
+                <a href="#" class="portfolio__item">
+                    <div class="portfolio__img-text">
+                        <img src="img/welding-01.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__text"> Metal and Wood Projects </div>
+                    </div>
+                </a>
+
+                <a href="#" class="portfolio__item">
+                    <div class="portfolio__img-text">
+                        <img src="img/rotary-03.jpg" alt="" class="portfolio__img">
+                        <div class="portfolio__text"> 3D Printed Rotary Engine </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- Email -->
+            <a href="mailto:mruigrok6@gmail.com" class="footer__link">mruigrok6@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/mruigrok">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/matthewruigrok/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        <script src="js/index.js"></script>
+    </body>
+</html>
